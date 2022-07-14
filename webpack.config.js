@@ -55,6 +55,10 @@ module.exports = {
 			}
 		]
 	},
+	presets: [
+		"@babel/preset-env",
+		"@babel/preset-react"
+	],
 	plugins: [
 		new HtmlWebpackPlugin({
 			template: './public/index.html',
@@ -64,7 +68,6 @@ module.exports = {
 			filename: '[name].css'
 		}),
 	],
-	presets: ["@babel/preset-react"],
 	devServer: {
 		historyApiFallback: true,
 	}
