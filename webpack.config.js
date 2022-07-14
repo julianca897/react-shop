@@ -55,6 +55,7 @@ module.exports = {
 			}
 		]
 	},
+	presets: ["@babel/preset-react"],
 	plugins: [
 		new HtmlWebpackPlugin({
 			template: './public/index.html',
